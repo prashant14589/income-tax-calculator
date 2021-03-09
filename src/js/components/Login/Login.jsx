@@ -18,7 +18,7 @@ return (
       <h1>Login</h1>
       <TextInput id="username" value={username} onChange={(e) => setUserName(e.target.value)}>Username:</TextInput> 
       <TextInput id="password" value={password} onChange={(e) => setPassword(e.target.value)}>Password:</TextInput> 
-      <button disabled = {!isValidUser} onClick= {handleLoginClick(username,password)}>Login</button>
+      <button disabled = {!isValidUser} onClick= {handleLoginClick}>Login</button>
     </>
   );
 }
