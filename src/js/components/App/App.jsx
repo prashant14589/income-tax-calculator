@@ -43,7 +43,10 @@ export const App = () => {
     }
     const handleSave = () => {
         const addSavedTaxes = [...savedTaxes];
-        addSavedTaxes.push({ "Year": year, "Age": age, "Income": income, "Investment": investment, "Calculated Tax": finalTaxPayble })
+        if(savedTaxes.length ==4) {
+            addSavedTaxes.shift();
+        }
+        addSavedTaxes.push({ "Year": year, "Age": age, "Income": income, "Investment": investment, "Calculated Tax": isNaN(finalTaxPayble) ?finalTaxPayble : finalTaxPayble.toFixed(2) })
         setSavedTaxes(addSavedTaxes)
     }
     return (
@@ -68,11 +71,12 @@ export const App = () => {
 
                 </section>
                 <TextInput id="tax" value={finalTaxPayble} readOnly={true}>Final Tax calculated:</TextInput>
-                {/* TODO - We can remove the disabled check, would fail for zero tax scenarios */}
-                <button disabled={Boolean(finalTaxPayble) === false} onClick={handleSave}>Save this Calculation</button>
+                {/* TODO - We can add a popup which says list full and value would be adjusted */}
+
+                <button disabled={Boolean(income) === false} onClick={handleSave}>Save this Calculation</button>
             </>
             )}
-            {Boolean(savedTaxes.length) && (
+            {Boolean(savedTaxes.length) && hasValidCreds && (
                 <section>
                     <h1>Saved User records</h1>
                     <Table data={savedTaxes.slice(0, 4)} />

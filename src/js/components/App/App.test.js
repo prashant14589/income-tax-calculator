@@ -1,5 +1,6 @@
 import React from 'react';
-import {fireEvent, render, screen } from '@testing-library/react';
+import {fireEvent, render, screen, waitFor } from '@testing-library/react';
+import Login from "../Login/Login";
 import { App } from './App';
 
 describe('<App />', () => {
@@ -13,10 +14,13 @@ describe('<App />', () => {
     });
     window.localStorage.setItem("user","A");
   });
-  it('should render successfully', () => {
-    const { container } = render(<App />);
-    expect(container).toMatchSnapshot();
-  });  
+  // test.only('should render successfully', async() => {
+  //   const { container, getByText } = render(<Login handleLoginClick= {handleLoginClick} />)
+  // expect(getByText('Username:')).toBeInTheDocument();
+  //   const handleLoginClick = jest.fn();
+  //   fireEvent.click(screen.getByText('Login'));    
+  //   expect(container).toMatchSnapshot();
+  // });  
   beforeEach( () => {
     render(<App />);
   });
