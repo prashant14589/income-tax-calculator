@@ -1,9 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should render successfully 1`] = `
+.c0 {
+  width: 30%;
+  height: 35px;
+  background: papayawhip;
+  color: gray;
+  padding-left: 5px;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+
+.c0 option {
+  color: palevioletred;
+  background: papayawhip;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: pre;
+  min-height: 20px;
+  padding: 0px 2px 1px;
+}
+
+.c1 {
+  padding: 0.5em;
+  display: inline-block;
+  width: 30%;
+  margin: 0.5em;
+  color: palevioletred;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+}
+
 <div>
+  <section>
+    <h1>
+      Tax Calculator
+    </h1>
+    <label
+      for="year"
+    >
+      Year:
+      <select
+        class="c0"
+        data-testid="select"
+      >
+        <option
+          value=""
+        >
+          Please enter year
+        </option>
+        <option
+          value="2018"
+        >
+          2018
+        </option>
+        <option
+          value="2019"
+        >
+          2019
+        </option>
+        <option
+          value="2020"
+        >
+          2020
+        </option>
+      </select>
+    </label>
+    <div>
+      <label
+        for="age"
+      >
+        Age:
+      </label>
+      <input
+        class="c1"
+        id="age"
+        type="text"
+        value="0"
+      />
+    </div>
+    <div>
+      <label
+        for="income"
+      >
+        Income:
+      </label>
+      <input
+        class="c1"
+        id="income"
+        type="text"
+        value="0"
+      />
+    </div>
+    <div>
+      <label
+        for="investment"
+      >
+        Investment:
+      </label>
+      <input
+        class="c1"
+        id="investment"
+        type="text"
+        value="0"
+      />
+    </div>
+  </section>
   <div>
-    Welcome to Medly Frontend Coding Challenge
+    <label
+      for="tax"
+    >
+      Final Tax calculated:
+    </label>
+    <input
+      class="c1"
+      id="tax"
+      readonly=""
+      type="text"
+      value="0"
+    />
   </div>
 </div>
 `;

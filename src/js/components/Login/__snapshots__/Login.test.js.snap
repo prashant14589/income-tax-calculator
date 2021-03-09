@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> should render successfully 1`] = `
+.c0 {
+  padding: 0.5em;
+  display: inline-block;
+  width: 30%;
+  margin: 0.5em;
+  color: palevioletred;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+}
+
+<div>
+  <h1>
+    Login
+  </h1>
+  <div>
+    <label
+      for="username"
+    >
+      Username:
+    </label>
+    <input
+      class="c0"
+      id="username"
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      for="password"
+    >
+      Password:
+    </label>
+    <input
+      class="c0"
+      id="password"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    disabled=""
+  >
+    Login
+  </button>
+</div>
+`;
