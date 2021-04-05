@@ -1,19 +1,8 @@
 # Income Tax Calculator
 
-## Context
+## Details
 
-As it's been few years since mankind has been living, earning and spending in the country of **Coderland**, governing body of the country have come up with rules and regulations for paying annual income tax for all individuals.
-
-Now that they have successfully implemented it manually for some years, they are confident that the system will sustain. Though, to reduce the manual effort, they now want to automate it.
-
-## Background
-
-In the country of **Coderland**, the annual income tax for an individual is calculated based on their total earnings and investments for a given financial year according to rules that are predefined for financial year.
-
-### Notes
-
--   <span style="color:blue"> Luckily, Coderland's Financial Year is aligned to Calendar Year i.e. Jan-Dec. </span>
--   <span style="color:blue"> Coincidentally, Coderland's Currency is INR (₹) </span>
+the annual income tax for an individual is calculated based on their total earnings and investments for a given financial year according to rules that are predefined for financial year.
 
 ### Rules
 
@@ -110,42 +99,3 @@ Here are rules for last three consecutive years:
 
       </div>
 
-## Problem Statement
-
-For a given year, age of user, user's taxable income and total tax free investments, write a web application that can accept these as a user input:
-
-`year,age,income,investment`
-
-The application will return the calculated tax output to user on change of any input field. Please consider these talks when you are building this application,
-
--   Do not use third part component library to build the UI. UI design should be material styled.
--   Tax calculation should be visible on every change. User can save a calculation.
--   The app should contain three screens.
-    -   Register/Login screen (Username & Password)
-    -   A dashboard shows last four tax calculation when they are saved (even when tabs are closed)
-    -   Tax calculation screen
--   Choice of database is yours
-
-## Important Points About Coding:
-
--   The submission must have full unit test coverage.
--   Prefer React with functional components. Building using typescript is good to have.
--   Use webpack to build project.
--   Design the solution considering future use case (as if writing production grade code, avoid if-else waterfalls).
--   You would be asked to enhance the same solution for in-office interview.
--   Ideally it should take 3-4 days to implement, if you need more time to inform us upfront.
--   Accompany a Readme with instructions to execute your program.
-
-**We value integrity the most in our potential candidates. Please do not share the coding problem or solution with any one. Avoid publishing your code in any public forum.**
-
-## Submitting your solution
-
-Please push your changes to the `master branch` of this repository. You can push one or more commits. <br>
-
-Once you are finished with the task, please click the `Complete task` link on <a href="https://app.codescreen.dev/#/codescreentestb2443a1b-d843-456e-85c5-5ebf716fc949" target="_blank">this screen</a>.
-
-## Submitting your solution
-
-Please push your changes to the `master branch` of this repository. You can push one or more commits. <br>
-
-Once you are finished with the task, please click the `Complete task` link on <a href="https://app.codescreen.dev/#/codescreentest28b01ac8-98ec-4910-ab3a-565634cf0f78" target="_blank">this screen</a>.
