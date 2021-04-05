@@ -1,1 +1,1 @@
-module.exports = 'medly-test-file-stub';
+module.exports = 'income-tax-file-stub';
